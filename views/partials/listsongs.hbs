@@ -1,0 +1,28 @@
+<table class="ui black inverted table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Song</th>
+      <th>Artist</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each playlist.songs}}
+      <tr>
+        <td>
+          <a class="ui purple inverted circular label">{{position}}</a>
+        </td>
+        <td>
+          {{title}}
+        </td>
+        <td>
+          {{artist}}
+        </td>
+            <td>
+          <a href="/search-track" class="ui inverted purple button" > View Song </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
